@@ -1,7 +1,5 @@
 import sys 
 
-# gagan -> len(gagan) = 5, 
-
 def reverse(s: str) -> str:
     res = ''
     for i in range(len(s)-1, -1, -1):
@@ -9,4 +7,7 @@ def reverse(s: str) -> str:
     return res
 
 if __name__ == '__main__':
-    print(reverse(sys.argv[1]))
+    try:  
+        print(reverse(sys.argv[1]))
+    except IndexError:
+        print('please enter string to reverse')
