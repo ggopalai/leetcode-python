@@ -11,7 +11,7 @@ class LinkedList:
 
 def traverse(ll):
     i = ll.head
-    while i is not None:
+    while i:
         print(i.data)
         i = i.next
 
@@ -24,5 +24,4 @@ if __name__ == "__main__":
     third = Node(3)
     ll.head.next = second
     second.next = third
-
     traverse(ll)
