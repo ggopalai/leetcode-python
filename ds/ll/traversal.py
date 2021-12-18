@@ -15,6 +15,18 @@ def traverse(ll):
         print(i.data)
         i = i.next
 
+def add(head: LinkedList, node: Node) -> LinkedList:
+    if head is None:
+        return head
+
+    temp = head.head
+    while temp.next:
+        temp = temp.next
+    
+    temp.next = node
+
+    return head
+
 
 if __name__ == "__main__":
 
@@ -24,4 +36,7 @@ if __name__ == "__main__":
     third = Node(3)
     ll.head.next = second
     second.next = third
+    # traverse(ll)
+
+    add(ll, Node(4))
     traverse(ll)
