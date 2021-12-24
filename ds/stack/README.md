@@ -17,4 +17,5 @@ Important problems/concepts -
 
 1. Infix to prefix/postfix conversion. 
 2. Evaluation of prefix/postfix expression. 
-3. Min stack with and without auxillary stack. 
+3. Min stack with and without auxillary stack.
+4. Balanced parenthesis
