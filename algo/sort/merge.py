@@ -5,16 +5,20 @@ def mergesort(a: List, l: int, r: int) -> List:
         mid = (l+r)//2
         # print(mid)
         t1 = mergesort(a, l, mid)
+        print(f't1 - {t1}')
         t2 = mergesort(a, mid+1, r)
-        b = merge(t1.extend(t2), l, mid, mid+1, r)
-        # print(b)
+        print(t2)
+        b = merge(t1 + t2, l, mid, mid+1, r)
+        print(b)
         return b
 
     return a[l:r+1]
 
 
 def merge(a: List, l1: int, r1: int, l2: int, r2: int) -> List:
+    print(f'inside merge - {a}')
     temp = list()
+    print(f'{l1} {r1} {l2} {r2}')
     while l1 <= r1 and l2 <= r2:
         if a[l1] < a[l2]:
             # print(f'left - {a[l1]}')
