@@ -15,10 +15,27 @@ def search(root, key):
     else:
         return search(root.left, key)
 
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(f'{root.data} -> ', end='')
+        inorder(root.right)
+
+def insert(root: Node, node: Node) -> Node:
+    if not root:
+        return node
+    
+    if node.data < root.data:
+        root.left = insert(root.left, node)
+    elif node.data > root.data:
+        root.right = insert(root.right, node)
+
+    return root
+
 if __name__ == '__main__':
-   root = Node(10)
-   root.left = Node(9)
-   root.right = Node(11) 
-   root.left.left = Node(5)
-   root.left.right = Node(9.5)
-   print(search(root, 9))
+   hroot = Node(50)
+   root = insert(hroot, Node(25))
+   root = insert(hroot, Node(100))
+   root = insert(hroot, Node(75))
+   root = insert(hroot, Node(30))
+   inorder(root)
