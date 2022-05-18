@@ -13,7 +13,7 @@ class Solution:
         a = head
         b = head
         
-        while a.next is not None and b.next is not None and b.next.next is not None:
+        while b.next and b.next.next:
             a = a.next
             b = b.next.next
             if id(a) == id(b):
