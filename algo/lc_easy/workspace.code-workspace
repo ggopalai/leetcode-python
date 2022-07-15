@@ -1,10 +1,13 @@
 {
 	"folders": [
 		{
+			"path": "../../../../courses/ml-andrewng/Week-3/logistic_regression"
+		},
+		{
 			"path": "../.."
 		},
 		{
-			"path": "../../../../python-oop"
+			"path": "../../../../courses/ml-andrewng/Week-4/kUJEz17MRN6CRM9ezITeZw_b7ca01e1a2714e9fb931b8d22baf0df1_ex3-octave"
 		}
 	],
 	"settings": {}
