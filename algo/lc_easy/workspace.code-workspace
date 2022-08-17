@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../../../../courses/learnpackage"
+		},
+		{
+			"path": "../../../../courses/go/interfaces"
 		}
 	],
 	"settings": {}
