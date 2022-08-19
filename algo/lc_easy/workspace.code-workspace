@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "../../../../courses/go/interfaces"
+		},
+		{
+			"path": "../../../../courses/go/http_server"
 		}
 	],
 	"settings": {}
