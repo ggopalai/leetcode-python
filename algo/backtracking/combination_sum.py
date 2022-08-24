@@ -7,9 +7,10 @@ class Solution:
                 return
             
             if sum(sub) == target:
-                res.append(sub.copy())
+                res.append(sub.copy()) #doesn't work without the .copy(). but why? it should, because each function has its own sub list, right?  
                 return
             
+            #first decision to include the ith number
             sub.append(candidates[i])
             dfs(i, sub, total + candidates[i])
             
