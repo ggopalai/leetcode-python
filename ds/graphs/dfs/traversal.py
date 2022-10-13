@@ -20,7 +20,7 @@ def dfsIterative(n: int, edges: List[ List[ int ] ], start: int):
         for i in al[node]:
             stack.append(i)
 
-dfsIterative(6, [ [0, 4], [0, 1], [1, 3], [1, 2],  ], 0)
+# dfsIterative(6, [ [0, 4], [0, 1], [1, 3], [1, 2],  ], 0)
 
 print("Recursive")
 

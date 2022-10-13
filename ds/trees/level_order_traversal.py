@@ -27,5 +27,6 @@ class Solution:
             r.append(n)
         
         return r
-            
+
+# 2. Neetcode solution without using a dict.
             

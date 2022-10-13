@@ -17,6 +17,15 @@
 		},
 		{
 			"path": "../../../../courses/go/http_server"
+		},
+		{
+			"path": "../../../../courses/webdev"
+		},
+		{
+			"path": "../../../resumes/clever_assignment"
+		},
+		{
+			"path": "../../../../ucsd/cse-110"
 		}
 	],
 	"settings": {}

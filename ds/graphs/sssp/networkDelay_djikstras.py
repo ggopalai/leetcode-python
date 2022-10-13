@@ -23,7 +23,7 @@ class Djikstras:
             if n1 in visit:
                 continue
             visit.add(n1)
-            t = w1 #w1 is cumulative, so simply take this instead of max. 
+            t = w1 #w1 is cumulative, so simply take this instead of max. also this line is subjective to the lc problem. avoid in general dijkstra's.
 
             for n2, w2 in edges[n1]:
                 if n2 not in visit:

@@ -20,3 +20,11 @@ class Solution:
 # how to solve with constant space? 
 # 
 # have to use xor property for this. xor every number -> all duplicates will cancel each other out, leaving the single number.             
+
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        a = 0 
+        for i in nums:
+            a ^= i
+        
+        return a 

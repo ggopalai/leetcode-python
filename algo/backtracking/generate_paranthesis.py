@@ -4,6 +4,7 @@ class Solution:
         res = []
         
         def bt(openC, closedC):
+            
             #we've reached an valid permutation of ()
             if openC == closedC == n:
                 res.append("".join(stack)) 

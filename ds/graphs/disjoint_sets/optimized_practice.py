@@ -5,9 +5,9 @@ class UnionFind:
         self.rank = [1] * size
     
     def find(self, x):
-        if x = self.root[x]:
+        if x == self.root[x]:
             return x
-        self.root[x] = self.find(root[x])
+        self.root[x] = self.find(self.root[x])
         return self.root[x]
     
     def union(self, x, y):

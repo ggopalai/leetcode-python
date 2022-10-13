@@ -16,7 +16,7 @@ class Solution:
             res.append(self.count(i))
         return res
 
-# is this works, but check for a more optimal solution. 
+# this works, but check for a more optimal solution. 
 
 class Solution:
     def countBits(self, n: int) -> List[int]:
