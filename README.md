@@ -3,7 +3,7 @@
 Competitive Coding/Interview Prep
 
 
-##Algorithms - 
+Algorithms - 
 Searching - linear, binary, jump, interpolation
 Sorting - bubble, selection, insertion, merge 
 Strings 
@@ -14,7 +14,7 @@ Divide, Decrease, Transform (and Conquer!)
 Greedy Technique
 Number Theory
 
-##Data Structures - 
+Data Structures - 
 Array
 Stacks
 Queues
