@@ -1,12 +1,7 @@
 # cc-python
 
-Competitive Coding/Interview Prep - Things to cover
+Competitive Coding/Interview Prep
 
-
-Algorithms
-Data Structures
-DBMS
-OS
 
 Algorithms - 
 Searching - linear, binary, jump, interpolation
@@ -30,8 +25,3 @@ Graphs
 Trie
 Heaps
 
-DBMS -
-SQL 
-NoSQL - ElasticSearch, DynamoDB
-
-OS -  
