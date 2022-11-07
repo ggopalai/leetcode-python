@@ -28,11 +28,9 @@ class UnionFind:
     
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        con = dict()
         n = len(isConnected)
         uf = UnionFind(n)
         for i in range(n):
-            lis = list()
             for j in range(i+1, n):
                 if i != j and isConnected[i][j] == 1:
                     uf.union(i, j)

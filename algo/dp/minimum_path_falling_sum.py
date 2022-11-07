@@ -18,4 +18,4 @@ class Solution:
                 else:
                     grid[i][j] = matrix[i][j] + min(grid[i-1][j-1], grid[i-1][j], grid[i-1][j+1])
                 
-        return min(grid[r-1])
+        return min(grid[r-1])       
