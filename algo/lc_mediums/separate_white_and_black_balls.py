@@ -34,4 +34,22 @@ class Solution:
         
         return c
 
+# space optimized - only store for '1's
+class Solution:
+    def minimumSteps(self, s: str) -> int:
+        c =  0
+        from collections import defaultdict
+        d = defaultdict(int)
         
+        x = 0
+        for i in range(len(s) - 1, -1, -1):
+            if s[i] == '0':
+                x += 1
+            if s[i] == '1':
+                d[i] = x
+        
+        for i in range(len(s)):
+            if s[i] == '1':
+                c += d[i]
+        
+        return c
