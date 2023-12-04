@@ -1,27 +1,42 @@
 class UnionFind:
+    """
+    Implements disjoint set datastructure.
+    Builds upon the quick union implementation by optimizing union with union ranking and find by path compression
+    """
 
-    def __init__(self, size):
-        self.root = [i for i in range(size)]
-        self.rank = [1] * size
+    def __init__(self, n) -> None:
+        """
+        Inititialize the parent and rank arrays.
+        """
+        self.parent = [i for i in range(n)]
+        self.rank = [1] * n 
     
-    def find(self, x):
-        if x == self.root[x]:
-            return x
-        self.root[x] = self.find(self.root[x])
-        return self.root[x]
-    
-    def union(self, x, y):
-        rootX = self.find(x)
-        rootY = self.find(y)
-        if rootX != rootY:
-            if self.rank[rootX] > self.rank[rootY]:
-                self.root[rootY] = rootX
-            elif self.rank[rootX] < self.rank[rootY]:
-                self.root[rootX] = rootY
+    def find(self, x: int) -> int:
+        """
+        Recursive path compression. Sets the parent of the node to its root for efficient subsequent calls.
+        """
+        if x == self.parent[x]:
+            return x 
+        self.parent[x] = self.find(self.parent[x])
+        return self.parent[x] 
+
+    def union(self, x: int, y: int) -> None:
+        """
+        Union by ranking. Produces a more balanced tree, making the union more efficient.
+        """
+        rootx = self.find(x)
+        rooty = self.find(y)
+        if rootx != rooty:
+            if self.rank[rootx] > self.rank[rooty]:
+                self.parent[rooty] = rootx
+            elif self.rank[rootx] < self.rank[rooty]:
+                self.parent[rootx] = rooty 
             else:
-                self.root[rootY] = rootX
-                self.rank[rootX] += 1
+                self.parent[rooty] = rootx
+                self.rank[rootx] += 1
 
-    
-    def connected(self, x, y):
+    def connected(self, x:int, y: int):
+        """
+        Returns true if both the nodes have the same root. 
+        """
         return self.find(x) == self.find(y)
