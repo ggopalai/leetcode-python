@@ -14,6 +14,7 @@ class UnionFind:
     def find(self, x: int) -> int:
         """
         Recursive path compression. Sets the parent of the node to its root for efficient subsequent calls.
+        Time - O(alpha(n)) - alpha stands for ackermann. Usually O(1)
         """
         if x == self.parent[x]:
             return x 
