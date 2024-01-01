@@ -5,7 +5,6 @@ class Solution:
 
         while i < len(colors) - 1:
             j = i + 1
-            s = 0
 
             # need to burst all adjacent balloons except the max
             while j < len(colors) and colors[j] == colors[i]:
