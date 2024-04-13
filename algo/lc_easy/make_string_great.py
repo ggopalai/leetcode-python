@@ -11,7 +11,7 @@ class Solution:
                     find = True
                     break
             
-            if not False:
+            if not find:
                 break
         
         return s
