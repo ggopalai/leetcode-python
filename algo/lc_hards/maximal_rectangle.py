@@ -7,7 +7,7 @@ class Solution:
             stack = []
             nonlocal maxArea
             for i, h in enumerate(heights):
-                 # start tracks how backward it can be extended
+                # start tracks how backward it can be extended
                 start = i
 
                 # pop because we cannot extend ahead
