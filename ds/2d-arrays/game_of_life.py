@@ -6,7 +6,6 @@ class Solution:
         from collections import defaultdict
         rows, cols = len(board), len(board[0])
         
-
         dirs = [(-1, -1), (1, 1), (1, -1), (-1, 1), (1, 0), (0, 1), (-1, 0), (0, -1)]
         for i in range(rows):
             for j in range(cols):
